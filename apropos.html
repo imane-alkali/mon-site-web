@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imane Alkhali Moussa | Développeuse Visionnaire</title>
+    <style>
+        :root {
+            --gold: #FFD700;
+            --deep-blue: #0A2463;
+            --ivory: #FFFFF0;
+            --green: #228B22;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--ivory);
+            color: #333;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: radial-gradient(circle at 10% 20%, rgba(255,215,0,0.05) 0%, rgba(255,215,0,0.01) 90%);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            color: var(--green);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 30px 0;
+            border: none;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: var(--deep-blue);
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 8px;
+            display: inline-block;
+            margin-top: 0;
+        }
+        
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: center;
+            margin: 25px 0;
+            padding: 15px;
+            background-color: rgba(255,215,0,0.1);
+            border-left: 4px solid var(--gold);
+        }
+        
+        .islamic-decoration {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--gold);
+            margin: 20px 0;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill {
+            background-color: var(--deep-blue);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .hidden-message {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            text-align: center;
+            background-color: rgba(10, 36, 99, 0.1);
+            border-radius: 8px;
+        }
+        
+        .show-message {
+            opacity: 1;
+            height: auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .reveal-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: var(--green);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .reveal-btn:hover {
+            background-color: var(--deep-blue);
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="islamic-decoration">﷽</div>
+    <div class="header">
+        <h1 class="name">Imane Alkhali Moussa</h1>
+        <p class="title">Développeuse • Innovatrice • Musulmane engagée</p>
+    </div>
+    
+    <hr class="divider">
+    
+    <div class="section">
+        <h2>🌟 Qui suis-je ?</h2>
+        <p>Passionnée d'informatique et ancrée dans mes valeurs islamiques, je cherche à créer une technologie qui sert l'humanité tout en honorant mes convictions. Pour moi, chaque ligne de code est une intention (niyyah) et chaque algorithme une réflexion sur la création parfaite d'Allah.</p>
+    </div>
+    
+    <div class="quote">
+        "Cherchez la connaissance du berceau au tombeau." <br>- Prophète Mohammed (ﷺ)
+    </div>
+    
+    <div class="section">
+        <h2>💻 Mes Compétences Techniques</h2>
+        <div class="skills-container">
+            <span class="skill">Python</span>
+            <span class="skill">Java</span>
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL</span>
+            <span class="skill">Algorithmie</span>
+            <span class="skill">Développement Web</span>
+            <span class="skill">Gestion de Projet</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🌍 Ma Vision</h2>
+        <p>Je rêve d'une technologie qui :</p>
+        <ul>
+            <li>Respecte l'éthique islamique dans le traitement des données</li>
+            <li>Facilite la vie des communautés musulmanes (apps de prière, zakat, etc.)</li>
+            <li>Montre que science et foi sont complémentaires</li>
+            <li>Encourage plus de femmes musulmanes dans la tech</li>
+        </ul>
+    </div>
+    
+    <div class="islamic-decoration">ﷺ</div>
+    
+    <div class="section">
+        <h2>✨ Particularités</h2>
+        <p>• Je débogue en récitant des dou'as pour garder patience</p>
+        <p>• Mon IDE a un thème "mosquée virtuelle" (fond noir avec motifs géométriques islamiques)</p>
+        <p>• Je vois le halal en tech : code propre, données protégées, intentions pures</p>
+    </div>
+    
+    <button class="reveal-btn" onclick="revealMessage()">Découvrir le Message Secret</button>
+    
+    <div class="hidden-message" id="secretMessage">
+        <h3>🕌 Message à mon Enseignant</h3>
+        <p>"Votre guidance est comme la lumière qui montre le chemin vers le savoir. En Islam, l'encre des savants est sacrée, et vous en faites partie. Merci de m'aider à concilier excellence technique et élévation spirituelle."</p>
+        <p>- Imane</p>
+        <div class="islamic-decoration" style="font-size: 1.5rem;">وَقُل رَّبِّ زِدْنِي عِلْمًا</div>
+        <p><i>("Et dis : Seigneur, accroît mon savoir" - Coran 20:114)</i></p>
+    </div>
+    
+    <footer>
+        <p>© 2023 Imane Alkhali Moussa - Tous droits réservés</p>
+    </footer>
+    
+    <script>
+        function revealMessage() {
+            const message = document.getElementById('secretMessage');
+            message.classList.toggle('show-message');
+            
+            const btn = document.querySelector('.reveal-btn');
+            if (message.classList.contains('show-message')) {
+                btn.textContent = 'Cacher le Message';
+            } else {
+                btn.textContent = 'Découvrir le Message Secret';
+            }
+        }
+    </script>
+</body>
+</html>

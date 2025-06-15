@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Hijab, Ma Fierté - Imane Alkhali Moussa</title>
+    <style>
+        /* Police Élégante */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5f0;
+            color: #333;
+        }
+        
+        /* Bannière Héroïque */
+        .hero {
+            background: url(./voile1.jpg) no-repeat center center;
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn-gold {
+            background: linear-gradient(to right, #D4AF37, #F5D76E);
+            color: #000;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Section "À Propos de Moi" */
+        .about-me {
+            background: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .about-me .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .about-me h2 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        
+        .about-me-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .my-photo {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .my-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #D4AF37;
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+        }
+        
+        .my-story {
+            flex: 1;
+            min-width: 250px;
+            text-align: left;
+        }
+        
+        .my-story p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        
+        /* Cartes */
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            width: 300px;
+            padding: 30px;
+            margin: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37;
+        }
+        
+        /* Citation */
+        .quote {
+            background: #2c3e50;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            font-size: 1.8rem;
+            font-style: italic;
+            margin: 60px 0;
+        }
+        
+        /* Pied de page */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+        nav li{
+            display: inline;
+            list-style-type: none;
+            margin-left: 100px;
+           
+        }
+        nav a{
+            text-decoration: none;
+             color:#D4AF37;
+            }
+    </style>
+</head>
+<body>
+    <!-- Bannière Héroïque -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Le Voile : Une Couronne de Fierté</h1>
+            <p>Découvrez pourquoi des millions de femmes choisissent le hijab comme symbole de force, de piété et de liberté.</p>
+            <a href="#manifeste" class="btn-gold">Lire la Manifeste du Hijab</a>
+
+        </div>
+   
+    </section>
+      <nav>
+        <ul>
+        <li><a href="">Acceuil</a></li>
+        <li><a href="apropos.html">A propos</a></li>
+        <li><a href="Contacts.html">Contact</a></li>
+        </ul>
+     </nav>
+    
+    <!-- Section "À Propos de Moi" -->
+    <section class="about-me">
+        <div class="container">
+            <h2>Je suis Imane Alkhali Moussa, et voici mon histoire</h2>
+            <div class="about-me-content">
+                <div class="my-photo">
+                    <img 
+                        src="./image.jpg" 
+                        alt="Imane Alkhali Moussa" 
+                    >
+                </div>
+                <div class="my-story">
+                    <p><strong>"Le hijab n’a pas fait de moi une femme invisible. Il a fait de moi une tempête silencieuse."</strong></p>
+                    <p>Je m'appelle <strong>Imane Alkhali Moussa</strong>, et porter le hijab a été ma plus grande révolution personnelle. Ce n’était pas facile au début… mais aujourd’hui, je sais que ce voile est ma <strong>force</strong>, ma <strong>protection</strong> et ma <strong>fierté</strong>.</p>
+                    <p>À travers ce site, je veux partager <strong>pourquoi le hijab est bien plus qu’un tissu</strong> : c’est un acte de foi, une résistance et une beauté intemporelle.</p>
+                    <a href="#mon-histoire" class="btn-gold">Lire mon témoignage complet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cartes -->
+    <div class="cards">
+        <div class="card">
+            <h3>👑 Liberté, Pas Oppression</h3>
+            <p>Le hijab libère la femme du regard objectivant de la société, lui permettant d'être jugée pour son intellect et son caractère.</p>
+        </div>
+        <div class="card">
+            <h3>💎 Une Protection Divine</h3>
+            <p>Un rappel constant de la présence d’Allah et de Sa miséricorde, un bouclier contre les tentations mondaines.</p>
+        </div>
+        <div class="card">
+            <h3>🛡 Beauté Intérieure > Apparence</h3>
+            <p>Le vrai charme est dans la modestie et l'intelligence, pas dans l'exhibition de son corps.</p>
+        </div>
+    </div>
+    
+    <!-- Citation -->
+    <section class="quote">
+        <p>"On ne mesure pas la valeur d’une femme à la longueur de ses cheveux, mais à la grandeur de son âme."</p>
+        <p><strong>– Une Sœur Fière</strong></p>
+    </section>
+    
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2023 - Le Pouvoir du Hijab - Par Imane Alkhali Moussa</p>
+    </footer>
+</body>
+</html>
